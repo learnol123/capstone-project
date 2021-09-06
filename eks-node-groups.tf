@@ -124,7 +124,7 @@ resource "aws_eks_node_group" "public_nodes_general" {
   cluster_name = aws_eks_cluster.eks.name
 
   # Name of the EKS Node Group.
-  node_group_name = "nodes-general"
+  node_group_name = "nodes-general-private"
 
   # Amazon Resource Name (ARN) of the IAM Role that provides permissions for the EKS Node Group.
   node_role_arn = aws_iam_role.nodes_general.arn
